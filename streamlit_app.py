@@ -9,7 +9,11 @@ st.title("💬 Prestige Elysian Chatbot")
 
 # 🔒 Hardcoded Gemini API Key and PDF Path
 api_key = "AIzaSyDgqfPNnyTTtrt20jghCFFHzhsvoosSFck"
-pdf_path = "/Users/gautamkumarsingh/Downloads/final_gemini_pdf_qa_bot/ror.pdf"  # ← replace with full path to your PDF
+
+# ✅ Dynamically get the path to the PDF in the same folder
+script_dir = os.path.dirname(os.path.abspath(__file__))
+pdf_path = os.path.join(script_dir, "ror.pdf")  # ror.pdf must be in the same folder
+
 
 # Configure Gemini API and read PDF
 if os.path.exists(pdf_path):
