@@ -8,7 +8,7 @@ st.set_page_config(page_title="📄 Prestige Elysian Chatbot")
 st.title("💬 Prestige Elysian Chatbot")
 
 # 🔒 Hardcoded Gemini API Key and PDF Path
-api_key = "AIzaSyDgqfPNnyTTtrt20jghCFFHzhsvoosSFck"
+api_key = "***"
 
 # ✅ Dynamically get the path to the PDF in the same folder
 script_dir = os.path.dirname(os.path.abspath(__file__))
